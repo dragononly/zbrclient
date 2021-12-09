@@ -1,0 +1,42 @@
+1.声明对象
+  interface Person { name: string; size: number; }
+  使用对象
+  let tom: Person = { name: res.data.filename[i], size:res.data.size[i] };
+              self.file[i]=tom
+
+  声明数组不要用 =[] 而是Array()
+	
+2.引入图片，data中没有理想的方法，加入require吧
+img:require("../assets/icon/房子.png") 
+
+3.import img1 from '@/assets/home/hb1.png'
+data() {
+	imglist:[img1]
+}
+
+:src="imglist[0]"
+
+4.动态切换图
+<span @click="togle">
+    <img :src=" this.i == 0 ? srcs : nosrc" alt="">
+</span>
+ 
+export default{
+    data(){
+        return{
+            i:0,
+            srcs:require('../images/icon-up@2x.png'),
+            nosrc:require('../images/icon-down@2x.png')
+        }
+    },
+    methods:{
+        togle(){
+            if(this.i==0){
+               this.i=1;
+            }else{
+               this.i=0;
+            }
+        }
+    }
+}
+注意i不能是数组
