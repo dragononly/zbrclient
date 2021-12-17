@@ -3,11 +3,9 @@
 
 		<top msg="false" style="position: relative;z-index: 3;"/>
 		<div style="position: relative;height: 1400px;z-index: 1;">
-			<div style="height: 500px;overflow: hidden;position: absolute;z-index: 2;">
-				<img style="margin-top: -200px;" width="100%" src="http://qn.moono.vip/zbr/%E4%B8%9A%E5%8A%A1%E8%8C%83%E5%9B%B4/%E5%A4%B4%E9%83%A8%E8%83%8C%E6%99%AF%E5%9B%BE.jpg" alt="">
-			</div>
+			
 
-			<div style="height: 200px;position: absolute;z-index: 3;left: 0;right: 0;margin: auto;top:450px;background: #fff;width: 80%;">
+			<div style="height: 200px;position: absolute;z-index: 3;left: 0;right: 0;margin: auto;background: #fff;width: 80%;">
 				<div style="padding-top: 20px;padding-left: 40px;">
 					<el-breadcrumb separator="/">
 						<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>

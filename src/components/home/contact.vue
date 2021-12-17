@@ -75,7 +75,7 @@
 
 <style scoped="scoped">
 	.nav6 {
-		background: url("http://aliyun.moono.vip/cloud/zbr/home/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/%E8%83%8C%E6%99%AF.jpg?");
+		background: url("../../assets/all/背景.jpeg");
 		background-size: 100%;
 		
 		margin-top: 2px;

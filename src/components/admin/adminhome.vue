@@ -4,9 +4,9 @@
 		<van-cell-group>
 			<van-field v-model="abouttitle" label="标题" placeholder="请输入标题" />
 			<van-field v-model="aboutcontent1" rows="2" autosize label="内容1" type="textarea" maxlength="137" placeholder="请输入内容"
-			 show-word-limit />
+ show-word-limit />
 			<van-field v-model="aboutcontent2" rows="2" autosize label="内容2" type="textarea" maxlength="137" placeholder="请输入内容"
-			 show-word-limit />
+ show-word-limit />
 		</van-cell-group>
 
 		<div style="text-align: left;padding: 5px;background:  #717171;color: #fff;">联系我们</div>

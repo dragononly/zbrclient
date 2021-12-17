@@ -5,7 +5,7 @@
 
        <div class="hidden-xs-only">
        	<div
-       		style="position: relative;z-index: 1;font-size: 15px;color: #fff;background: url('http://aliyun.moono.vip/cloud/zbr/二级页面/社会公益/灰色背景.jpg') repeat no-repeat;background-size: 100%;">
+       		style="position: relative;z-index: 1;font-size: 15px;color: #fff;background: url('../../assets/all/灰色背景.jpeg') repeat no-repeat;background-size: 100%;">
        		<div style="color: #f9cd59;font-size: 40px;padding-top: 100px;">旅行社会责任，开展各类公益活动</div>
        		<div style="padding-top: 50px;">立足业务发展与服务社会，多途径多渠道地寻求</div>
        		<div style="padding-top: 15px;">经济效益与社会效益的最佳结合点。在提高经济效益的同时回馈社会，援助灾区重建和西部地区发展</div>
@@ -15,19 +15,19 @@
        		<el-row>
        			<el-col :md="12">
        
-       				<img height="260px" width="100%" src="http://aliyun.moono.vip/cloud/zbr/二级页面/社会公益/左边.jpg"
+       				<img height="260px" width="100%" src="../../assets/all/左边.jpeg"
        					alt="">
        
        			</el-col>
        			<el-col :md="12"><img height="260px" width="100%"
-       					src="http://aliyun.moono.vip/cloud/zbr/二级页面/社会公益/右边.jpg" alt=""></el-col>
+       					src="../../assets/all/右边.jpeg" alt=""></el-col>
        		</el-row>
        	</div>
        </div>
        
        <div class="hidden-md-and-up">
        	<div
-       		style="font-size: 11px;position: relative;z-index: 1;color: #fff;background: url('http://aliyun.moono.vip/cloud/zbr/二级页面/社会公益/灰色背景.jpg') repeat no-repeat;background-size: 100%;">
+       		style="font-size: 11px;position: relative;z-index: 1;color: #fff;background: url('../../assets/all/灰色背景.jpeg') repeat no-repeat;background-size: 100%;">
        		<div style="color: #f9cd59;font-size: 20px;padding-top: 20px;">旅行社会责任，开展各类公益活动</div>
        		<div style="padding-top: 20px;">立足业务发展与服务社会，多途径多渠道地寻求</div>
        		<div style="padding-top: 10px;">经济效益与社会效益的最佳结合点。在提高经济效益的同时回馈社会，援助灾区重建和西部地区发展</div>
@@ -37,12 +37,12 @@
        		<el-row>
        			<el-col :xs="12">
        
-       				<img height="140px" width="100%" src="http://aliyun.moono.vip/cloud/zbr/二级页面/社会公益/左边.jpg"
+       				<img height="140px" width="100%" src="../../assets/all/左边.jpeg"
        					alt="">
        
        			</el-col>
        			<el-col :xs="12"><img height="140px" width="100%"
-       					src="http://aliyun.moono.vip/cloud/zbr/二级页面/社会公益/右边.jpg" alt=""></el-col>
+       					src="../../assets/all/右边.jpeg" alt=""></el-col>
        		</el-row>
        	</div>
        </div>

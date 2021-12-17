@@ -4,10 +4,10 @@
 		<top msg="false" style="position: relative;z-index: 3;" />
 
         <div class="hidden-xs-only" style="position: relative;z-index: 1;">
-			<img width="100%" src="http://aliyun.moono.vip/cloud/zbr/二级页面/文化传承/文化传承.jpg" alt="">
+			<img width="100%" src="../../assets/all/文化传承.jpeg" alt="">
 		</div>
 		<div class="hidden-md-and-up" style="position: relative;z-index: 1;">
-			<img width="120%" style="margin-left: -40px;"  src="http://aliyun.moono.vip/cloud/zbr/二级页面/文化传承/文化传承.jpg" alt="">
+			<img width="120%" style="margin-left: -40px;"  src="../../assets/all/文化传承.jpeg" alt="">
 		</div>
 	
 		<!-- 联系我们 -->

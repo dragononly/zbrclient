@@ -161,28 +161,28 @@
 			let self = this
 			//请求加载目录
 			self.reqNoteMenu()
-			document.oncontextmenu = function(ev) {
-				self.show = true
-				let el = document.getElementsByClassName("box-card")[0]
-				//鼠标没有落在书本上
-				if (self.nowhover == "") {
-					var e = ev || window.event;
-					var x = e.clientX;
-					var y = e.clientY;
-					el.style.left = e.clientX + 'px'
-					el.style.top = e.clientY + 'px'
-				} else {
-					el = document.getElementsByClassName("box-card")[0]
+			// document.oncontextmenu = function(ev) {
+			// 	self.show = true
+			// 	let el = document.getElementsByClassName("box-card")[0]
+			// 	//鼠标没有落在书本上
+			// 	if (self.nowhover == "") {
+			// 		var e = ev || window.event;
+			// 		var x = e.clientX;
+			// 		var y = e.clientY;
+			// 		el.style.left = e.clientX + 'px'
+			// 		el.style.top = e.clientY + 'px'
+			// 	} else {
+			// 		el = document.getElementsByClassName("box-card")[0]
 
-					try {
-						el.style.left = self.startx + 'px'
-						el.style.top = self.starty + 'px'
-					} catch (e) {
-						//TODO handle the exception
-					}
-				}
-				return false
-			}
+			// 		try {
+			// 			el.style.left = self.startx + 'px'
+			// 			el.style.top = self.starty + 'px'
+			// 		} catch (e) {
+			// 			//TODO handle the exception
+			// 		}
+			// 	}
+			// 	return false
+			// }
 		},
 		methods: {
 			sendSonData2(data) {

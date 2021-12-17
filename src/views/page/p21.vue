@@ -463,7 +463,7 @@ export default {
   mounted() {
     let self = this;
     async function ok() {
-      await self.reqNoteMenu();
+      self.reqNoteMenu();
     }
     document.body.scrollTop = 0;
 
@@ -471,17 +471,13 @@ export default {
     ok();
     self.nowpage = this.$route.query.page;
     self.leixing = this.$route.query.leixing;
-    // let html=`<br><div  style="display: inline-block;border-bottom: 2px solid saddlebrown;width: 100px;margin-left: -20px;"></div>`
-    // $('.hov1').click(function(){
-    // 	$(this).append(html)
-    // })
   },
 
   methods: {
     ok2() {
       let self = this;
       if (self.leixing) {
-        test2(self.leixing);
+        // test2(self.leixing);
       }
     },
     go(name) {
@@ -558,6 +554,8 @@ export default {
           },
         })
         .then(function (res) {
+
+        
           self.srcarr = res.data.srcarr;
 
           self.namearr2 = res.data.namearr;
@@ -682,7 +680,7 @@ export default {
       }
       this.jihuo();
     },
-    show4(order) {
+    show4() {
       if (this.height == 0) {
         $("#height0").css("height", "180px");
         this.height = 1;
@@ -729,6 +727,5 @@ export default {
   padding: 3px 0;
   padding-left: 6px;
   border: none;
-  text-align: ;
 }
 </style>

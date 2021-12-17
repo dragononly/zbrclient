@@ -34,8 +34,8 @@
 			</el-col>
 			<el-col :md="12" :xs="24">
 				<img width="100%" style="padding-top: 30px;padding-bottom: 10px;" class="hidden-xs-only" height="428px"
-					src="http://aliyun.moono.vip/cloud/zbr/home/关于我们/img1.jpg">
-				<img width="87%" class="hidden-md-and-up" src="http://aliyun.moono.vip/cloud/zbr/home/关于我们/img1.jpg"
+					src="../../assets/about/img1.jpeg">
+				<img width="87%" class="hidden-md-and-up" src="../../assets/about/img1.jpeg"
 					>
 			</el-col>
 		</el-row>

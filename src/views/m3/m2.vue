@@ -5,7 +5,7 @@
 		<div class="hidden-xs-only" style="position: relative;z-index: 1;">
 
 
-			<div style="height: 350px;font-size: 15px;color: #fff;background: url('http://aliyun.moono.vip/cloud/zbr/二级页面/新闻/banner.jpg');">
+			<div style="height: 350px;font-size: 15px;color: #fff;background: url('../../assets/all/banner.jpeg');">
 				<div style="line-height: 350px;color: #fff;font-size: 40px;padding-top:120px;">News &nbsp; - &nbsp;新闻</div>
 			</div>
 
@@ -43,7 +43,7 @@
 		<div class="hidden-md-and-up" style="position: relative;z-index: 1;">
 		
 		
-			<div style="height: 140px;font-size: 15px;color: #fff;background: url('http://aliyun.moono.vip/cloud/zbr/二级页面/新闻/banner.jpg');">
+			<div style="height: 140px;font-size: 15px;color: #fff;background: url('../../assets/all/banner.jpeg');">
 				<div style="line-height: 140px;color: #fff;font-size: 24px;">News &nbsp; - &nbsp;新闻</div>
 			</div>
 		

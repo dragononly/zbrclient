@@ -30,18 +30,14 @@
 		data() {
 			return {
 				list: [{
-						img: 'http://aliyun.moono.vip/cloud/zbr/home/首页轮播图/图片1.jpg',
+						img: '../../assets/all/图片1.jpeg',
 						src: '/'
 					},
 					{
-						img: 'http://aliyun.moono.vip/cloud/zbr/home/首页轮播图/图片2.jpg',
+						img: '../../assets/all/图片2.jpeg',
 						src: '/p1'
 					},
 				],
-				 images: [
-				        'https://img01.yzcdn.cn/vant/apple-1.jpg',
-				        'https://img01.yzcdn.cn/vant/apple-2.jpg',
-				      ],
 			};
 		},
 		mounted() {

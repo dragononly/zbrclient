@@ -5,7 +5,7 @@
 			<div style="margin-top: -10px;"><img width="80px" src="../../assets/home/st1.png"></div>
 			<div style="width: 4479px;height: 620px;margin: auto;margin-top: 20px;text-align: left;position: relative;">
 				<img draggable="false" @mousemove="yidong" @mouseup="anqi" @mousedown="anxia" id="imgt"
-					src="http://aliyun.moono.vip/cloud/zbr/home/历史沿革/拖动图片长图.jpeg" alt="">
+					src="../../assets/all/拖动图片长图.jpeg" alt="">
 			</div>
 		</div>
 		<div class="hidden-md-and-up" style="clear: both;padding-top: 20px;width:100%;margin: auto;">
@@ -13,7 +13,7 @@
 			<div style="margin-top: 0px;"><img width="80px" src="../../assets/home/st1.png"></div>
 			<div style="width: 100%;height: 420px;margin: auto;margin-top: 20px;text-align: left;position: relative;">
 				<img style="height: 400px;margin-left: -20px;" id="imgt"
-					src="http://aliyun.moono.vip/cloud/zbr/home/历史沿革/拖动图片长图.jpeg" alt="">
+					src="../../assets/all/拖动图片长图.jpeg" alt="">
 			</div>
 		</div>
 	</div>

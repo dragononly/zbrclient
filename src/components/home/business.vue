@@ -4,7 +4,7 @@
 			<div class="liuff" style="margin-top: -100px;">
 				<div style="width: 80%; margin: auto; height: 320px;position: relative;">
 					<div style="position: absolute;top: -300px;width: 60%;">
-						<img width="500px" src="http://aliyun.moono.vip/cloud/zbr/home/%E4%B8%9A%E5%8A%A1%E8%8C%83%E5%9B%B4/%E9%87%91%E5%A4%B4.png">
+						<img width="500px" src="../../assets/all/金头.jpeg">
 					</div>
 					<div style="color: #fff;text-align: right;">
 						<div style="font-size: 18px;">业务范围</div>
@@ -43,7 +43,7 @@
 		clear: both;
 	}
 	.liuff {
-		background: url("http://aliyun.moono.vip/cloud/zbr/home/%E4%B8%9A%E5%8A%A1%E8%8C%83%E5%9B%B4/bg.jpeg") repeat no-repeat;
+		background: url("../../assets/all/bg.jpeg") repeat no-repeat;
 		background-size: 100%;
 		clear: both;
 		position: relative;

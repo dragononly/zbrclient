@@ -7,7 +7,7 @@
           height: 350px;
           font-size: 15px;
           color: #fff;
-          background: url('http://aliyun.moono.vip/cloud/zbr/二级页面/新闻/banner.jpg');
+          background: url('../../assets/all/banner.jpeg');
         "
       >
         <div
@@ -112,7 +112,7 @@
           height: 120px;
           font-size: 15px;
           color: #fff;
-          background: url('http://aliyun.moono.vip/cloud/zbr/二级页面/新闻/banner.jpg');
+          background: url('../../assets/all/banner.jpeg');
         "
       >
         <div style="line-height: 120px; color: #fff; font-size: 24px">

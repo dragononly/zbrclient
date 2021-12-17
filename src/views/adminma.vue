@@ -122,9 +122,6 @@
 	import adminpro04 from "@/components/admin/adminpro04.vue";
 	import adminpro3 from "@/components/admin/adminpro3.vue";
 	import adminpro4 from "@/components/admin/adminpro4.vue";
-	import {
-		Toast
-	} from 'vant';
 	import $ from 'jquery'
 	export default {
 		name: "admin",

@@ -2,11 +2,11 @@
 	<div>
 		<div class="hidden-xs-only">
 			<img width="100%"
-				src="https://bsuiryun.oss-cn-hangzhou.aliyuncs.com/uploads%2F1%2F%E5%AE%A2%E6%88%B7%2F%E6%9C%B1%E7%82%B3%E4%BB%81%2F%E5%90%88%E6%88%90-1.gif?Expires=1615976434">
+				src="../assets/all/1.gif">
 		</div>
 		<div class="hidden-md-and-up">
 			<img width="100%" style="margin-top: -150px;"
-				src="https://bsuir.oss-cn-hangzhou.aliyuncs.com/myImg/%E6%9C%B1%E7%82%B3%E4%BB%81/LOGO0602.gif">
+				src="../assets/all/phone.gif">
 		</div>
 	</div>
 
