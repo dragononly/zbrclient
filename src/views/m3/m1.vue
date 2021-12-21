@@ -7,7 +7,7 @@
           height: 350px;
           font-size: 15px;
           color: #fff;
-          background: url('../../assets/all/banner.jpeg');
+          background: url('https://wx.moono.vip:8999/mynumber1/zbrstatic/banner.jpeg');
         "
       >
         <div
@@ -112,7 +112,7 @@
           height: 120px;
           font-size: 15px;
           color: #fff;
-          background: url('../../assets/all/banner.jpeg');
+          background: url('https://wx.moono.vip:8999/mynumber1/zbrstatic/banner.jpeg');
         "
       >
         <div style="line-height: 120px; color: #fff; font-size: 24px">
