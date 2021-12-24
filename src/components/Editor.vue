@@ -24,24 +24,20 @@
 		watch: {
 			editorContent() {
 				this.$emit('val', this.editorContent);
-
 			},
 			toSonData() {
 				if (this.toSonData !== this.me.txt.html()) {
 					this.me.txt.html(this.toSonData)
 				}
-
 			}
 		},
 		methods: {},
 		mounted() {
 			let self = this;
 			var editor = new E(this.$refs.editor);
-
 			self.me = editor
 			editor.config.onchange = html => {
 				this.editorContent = html;
-
 			};
 			var minioClient = new Minio.Client({
 				endPoint: 'wx.moono.vip',
@@ -80,7 +76,6 @@
 											self.$emit("toFatherData", last)
 						})
 					}
-
 				
 			
  
@@ -94,15 +89,12 @@
 						//     console.log(err)
 						//   })
 			}
-
 			editor.create();
 			
-
 			
 		}
 	};
 </script>
 
 <style scoped>
-
 </style>

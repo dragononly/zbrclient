@@ -88,7 +88,7 @@
 						// console.log("Success", objInfo);
 						self.$emit("toFatherData", last)
 					})
-
+					
 					}
 				
 					
