@@ -62,7 +62,7 @@
             </div>
             <div v-if="show1css">
               <div
-                @click="test2(a)"
+                @click="cloud(a)"
                 v-for="(a, b) in menua1"
                 :key="b"
                 style="text-indent: -15px"
@@ -250,9 +250,68 @@
             </div>
           </van-step>
         </van-steps>
-      </div>
 
+        <van-steps
+          style="margin-top: -10px"
+          active-icon="play-circle"
+          direction="vertical"
+          active-color="#969799"
+        >
+          <van-step>
+            <div
+              @click="show5"
+              class="hov1"
+              style="
+                overflow: hidden;
+                margin-left: -24px;
+                background: #fff;
+                padding-bottom: 5px;
+                box-shadow: 2px 2px 2px silver;
+                margin-top: -17px;
+                width: 147px;
+                padding-left: 15px;
+              "
+            >
+              <span style="margin-top: -10px">云项目</span>
+           <img
+                style="margin-top: -5px; margin-left: 0px"
+                width="20px"
+                src="../../assets/icon/现代建筑.png"
+              />
+              <i
+                style="font-size: 20px; margin-top: 12px"
+                class="el-icon-arrow-down"
+              ></i>
+              <div
+                id="height0"
+                style="
+                  left: -15.6px;
+                  top: 24px;
+                  border-left: 1px solid #969799;
+                  position: absolute;
+                  z-index: 3;
+                "
+              ></div>
+            </div>
+            <div v-if="show5css" style="text-align: center">
+              <div
+                @click="test2('云项目')"
+                style="text-indent: -15px"
+              >
+                <span>
+                  <van-step class="hov1">
+                 <router-link target="_blank"
+											to="p21?page=4&cloud2=true" style="color: #96A4C4;">云项目</router-link> 
+                  </van-step>
+                </span>
+              </div>
+            </div>
+          </van-step>
+        </van-steps>
+      </div>
+    <div v-show="!cloud2">
       <div
+      
         style="
           padding-left: 100px;
           width: 45%;
@@ -332,14 +391,12 @@
           <van-button @click="addimg()" color="#636465">了解更多+</van-button>
         </div>
       </div>
-      <!-- 联系我们 -->
-      <div style="margin-top: 70px">
-        <contact />
       </div>
+     
     </div>
 
     <div class="hidden-md-and-up">
-      <div
+      <div v-show="!cloud2"
         style="
           width: 100%;
           position: relative;
@@ -355,8 +412,8 @@
       >
         <img width="100%" :src="srcarr[0]" alt="" />
       </div>
-
-      <div style="width: 100%; margin: auto">
+<div v-show="!cloud2">
+      <div  style="width: 100%; margin: auto">
         <el-row>
           <el-col
             :md="24"
@@ -378,7 +435,7 @@
         </el-row>
       </div>
 
-      <div style="margin: auto; width: 100%; margin-top: 20px">
+      <div  style="margin: auto; width: 100%; margin-top: 20px">
         <div
           class="hov1"
           v-for="(a, b) in urlsnow"
@@ -410,14 +467,228 @@
         <div style="clear: both">
           <van-button @click="addimg()" color="#636465">了解更多+</van-button>
         </div>
+      
       </div>
-      <!-- 联系我们 -->
-      <div style="margin-top: 70px">
-        <contact />
-      </div>
+</div>
     </div>
 
-    <foot msg="o" />
+
+   
+   <div v-show="cloud2" class="hidden-xs-only" style="width:67%;margin:auto;margin-top: 5px;height: 450px;">
+
+     <div style="margin-left:110px;">
+        <div style="float:left;position:relative">
+         <a href="https://720yun.com/t/7cvkzwfyO89?scene_id=87382213" target="_blank">
+           <img class="myimg" src="../../assets/cloud/太原太山景区龙泉寺.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:110px;color:#FFF;left: 45px;">太原太山景区龙泉寺</div>
+               <img style="position:absolute;top: 80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div></a>
+        </div>
+
+        <div style="float:left;position:relative;margin-left: 4px;">
+         <a href="https://720yun.com/t/415je7sOeu1?scene_id=18012992" target="_blank">
+           <img class="myimg" src="../../assets/cloud/常州天宁宝塔.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:140px;color:#FFF;left: 45px;">常州天宁宝塔</div>
+               <img style="position:absolute;top: 80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div>
+           </a>
+        </div>
+
+        <div style="float:left;position:relative;margin-left: 4px;">
+        <a href="https://720yun.com/t/84cjepyyuf4?scene_id=16190459" target="_blank">
+           <img class="myimg" src="../../assets/cloud/杭州西湖雷峰塔.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:140px;color:#FFF;left: 45px;">杭州西湖雷峰塔</div>
+               <img style="position:absolute;top: 80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div>
+            </a>
+        </div>
+
+         <div style="float:left;position:relative;margin-left: 4px;">
+          <a href="https://720yun.com/t/0e2j55kwew6?scene_id=10662578" target="_blank">
+           <img class="myimg" src="../../assets/cloud/绍兴兜率天宫.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:150px;color:#FFF;left: 45px;">绍兴兜率天宫</div>
+               <img style="position:absolute;top: 80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div></a>
+        </div>
+
+         <div style="float:left;position:relative;margin-left: 4px;">
+          <a href="https://720yun.com/t/98429usdmnw?scene_id=3617810" target="_blank">
+           <img class="myimg" src="../../assets/cloud/太姥山景区一片瓦禅寺.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:100px;color:#FFF;left: 45px;">太姥山景区一片瓦禅寺</div>
+               <img style="position:absolute;top:80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div></a>
+        </div>
+
+        <div style="float:left;position:relative;margin-left: 4px;">
+         <a href="https://720yun.com/t/69vknmi777q?scene_id=31845689" target="_blank">
+           <img class="myimg" src="../../assets/cloud/广州大佛寺.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:140px;color:#FFF;left: 45px;">广州大佛寺</div>
+               <img style="position:absolute;top:80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div></a>
+        </div>
+
+        <div style="float:left;position:relative;margin-left: 4px;">
+        <a href="https://720yun.com/t/40b2dxauqbf?scene_id=1244182" target="_blank">
+           <img class="myimg" src="../../assets/cloud/大洪山金顶.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:140px;color:#FFF;left: 45px;">大洪山金顶</div>
+               <img style="position:absolute;top:80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div></a>
+         
+        </div>
+
+        <div style="float:left;position:relative;margin-left: 4px;">
+          <a href="https://720yun.com/t/c1vks78lO79?scene_id=47573006" target="_blank">
+           <img class="myimg" src="../../assets/cloud/隋唐洛阳城.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:140px;color:#FFF;left: 45px;">隋唐洛阳城</div>
+               <img style="position:absolute;top:80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div>
+              </a>
+        </div>
+
+         <div style="float:left;position:relative;margin-left: 4px;">
+          <a href="https://720yun.com/t/17vkiyilgql?scene_id=34395946" target="_blank">
+           <img class="myimg" src="../../assets/cloud/珠穆朗玛峰关帝庙.jpg" alt="">
+           <div>
+               <div style="width:20px;position: absolute;top:140px;color:#FFF;left: 45px;">珠穆朗玛峰关帝庙</div>
+               <img style="position:absolute;top:80px;left: 46px;width: 18px;" src="../../assets/cloud/iconup.png">
+               <img style="position:absolute;top:310px;left: 46px;width: 18px;" src="../../assets/cloud/icondown.png">
+           </div></a>
+        </div>
+        
+      
+      </div>
+    </div>
+   <div v-show="cloud2" class="hidden-md-and-up" style="margin:auto;margin-top: 5px;height: 450px;">
+    <div style="margin: auto;width: 90%;"  >
+		<div style="font-size: 23px;font-weight: 400;">云游中国</div>
+			<div style="margin-top: -10px;"><img width="80px" src="../../assets/home/st1.png"></div>
+		<el-row>
+			<el-col :xs="11" offset="1" >
+			<div style="position:relative;text-align: center;">
+      <a href="https://720yun.com/t/7cvkzwfyO89?scene_id=87382213" target="_blank">
+				<img class="myimg"  src="../../assets/cloud/手机端/太原太山景区龙泉寺.jpg" style="width:100%;" alt="">
+				<div style="width: 170px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					太原太山景区龙泉寺
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div>
+        </a>
+			</div>
+			</el-col>
+			<el-col :xs="11" style="margin-left:5px;">
+			<div style="position:relative;text-align: center;">
+		 <a href="https://720yun.com/t/415je7sOeu1?scene_id=18012992" target="_blank">
+				<img class="myimg" src="../../assets/cloud/手机端/常州天宁宝塔.jpg" width="100%" alt="">
+				<div style="width: 170px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					常州天宁宝塔
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div>
+				</a>
+			</div>
+			<div style="margin-top:4px;position:relative;text-align: center;">
+		 <a href="https://720yun.com/t/84cjepyyuf4?scene_id=16190459" target="_blank">
+				<img class="myimg" src="../../assets/cloud/手机端/杭州西湖雷峰塔.jpg" width="100%" alt="">
+				<div style="width: 170px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					杭州西湖雷峰塔
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div>
+				</a>
+			</div>
+			</el-col>
+		</el-row>
+		<el-row style="margin-top:5px;">
+			<el-col :xs="11" offset="1">
+			<div  style="margin-top:4px;position:relative;text-align: center;">
+       <a href="https://720yun.com/t/69vknmi777q?scene_id=31845689" target="_blank">
+				<img class="myimg" src="../../assets/cloud/手机端/广州大佛寺.jpg" width="100%" alt="">
+				<div style="width: 170px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					广州大佛寺
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div></a>
+			</div>
+			<div  style="margin-top:4px;position:relative;text-align: center;">
+       <a href="https://720yun.com/t/98429usdmnw?scene_id=3617810" target="_blank">
+				<img class="myimg" src="../../assets/cloud/手机端/太姥山景区一片瓦禅寺.jpg" width="100%" alt="">
+				<div style="width: 200px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					太姥山景区一片瓦禅寺
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div></a>
+			</div>
+			</el-col>
+			<el-col :xs="11" style="margin-left:5px;">
+			<div  style="margin-top:4px;position:relative;text-align: center;">
+       <a href="https://720yun.com/t/0e2j55kwew6?scene_id=10662578" target="_blank">
+				<img class="myimg" src="../../assets/cloud/手机端/绍兴兜率天宫.jpg" style="width: 100%;" alt="">
+				<div style="width: 170px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					绍兴兜率天宫
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div></a>
+			</div>
+			</el-col>
+		</el-row>
+		<el-row style="margin-top:5px;">
+			<el-col :xs="11" offset="1" >
+			<div  style="margin-top:4px;position:relative;text-align: center;">
+		 <a href="https://720yun.com/t/c1vks78lO79?scene_id=47573006" target="_blank">
+				<img class="myimg" src="../../assets/cloud/手机端/隋唐洛阳城.jpg" style="width: 100%;" alt="">
+				<div style="width: 170px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					隋唐洛阳城
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div>
+			</a>
+			</div>
+			</el-col>
+			<el-col :xs="11" style="margin-left:5px;">
+			<div  style="margin-top:4px;position:relative;text-align: center;">
+       <a href="https://720yun.com/t/17vkiyilgql?scene_id=34395946" target="_blank">
+				<img class="myimg" src="../../assets/cloud/手机端/珠穆朗玛峰关帝庙.jpg" width="100%" alt="">
+				<div style="width: 170px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					珠穆朗玛峰关帝庙
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div></a>
+			</div>
+			<div  style="margin-top:4px;position:relative;text-align: center;">
+       <a href="https://720yun.com/t/40b2dxauqbf?scene_id=1244182" target="_blank">
+				<img class="myimg" src="../../assets/cloud/手机端/大洪山金顶.jpg" width="100%" alt="">
+				<div style="width: 170px;position:absolute;top:45%;margin: auto;text-align: center;color: #fff;font-weight: 600;font-size: 14px;">
+					<img src="../../assets/cloud/手机端/iconl.png" width="15px" alt="">
+					大洪山金顶
+					<img src="../../assets/cloud/手机端/icon.png" width="15px" alt="">
+				</div></a>
+			</div>
+			</el-col>
+		</el-row>
+
+	</div>
+    </div>
+ 
+    <!-- 联系我们 -->
+      <div style="padding-top: 450px">
+        <contact />
+      </div>
   </div>
 </template>
 
@@ -441,9 +712,11 @@ export default {
       show2css: false,
       show3css: false,
       show4css: false,
+      show5css: false,
       resdata: "",
       srcarr: [],
       namearr: [],
+      n:0,
       urls: [],
       urlsnow: [],
       n: 1,
@@ -452,6 +725,8 @@ export default {
       xianzhi: 20,
       namearr2: [],
       height: 0,
+      cloudshow:false,
+      cloud2:false
     };
   },
   beforeMount() {},
@@ -471,6 +746,11 @@ export default {
     ok();
     self.nowpage = this.$route.query.page;
     self.leixing = this.$route.query.leixing;
+    
+  
+    if(this.$route.query.cloud2){
+       self.cloud2=true
+    }
   },
 
   methods: {
@@ -541,7 +821,11 @@ export default {
       self.nowclick = a;
       self.urlsnow = [];
       self.xianzhi = 20;
-
+      if(self.n>2){
+         self.cloud2=false
+      }
+      self.n++
+     
       let data = JSON.stringify({
         menu2: self.nowclick,
       });
@@ -612,6 +896,7 @@ export default {
       self.menua2 = [];
       self.menua3 = [];
       self.menua4 = [];
+      self.menua5 = [];
       axios
         .get(self.src + "/build/reqNoteMenu", {})
         .then(function (res) {
@@ -636,9 +921,12 @@ export default {
           } else if (self.nowpage == "3") {
             self.test2(self.menua3[0]);
             self.show3();
-          } else {
+          } else if (self.nowpage == "4"){
             self.test2(self.menua4[0]);
             self.show4();
+          }else {
+            self.test2(self.menua5[0]);
+            self.show5();
           }
 
           self.resdata = res.data;
@@ -653,6 +941,9 @@ export default {
         .catch(function (error) {
           alert(error);
         });
+    },
+    cloud(){
+          this.cloudshow = true;
     },
     show1() {
       if (this.show1css) {
@@ -696,6 +987,14 @@ export default {
       }
       this.jihuo();
     },
+    show5() {
+      if (this.show5css) {
+        this.show5css = false;
+      } else {
+        this.show5css = true;
+      }
+      // this.jihuo();
+    },
   },
 };
 </script>
@@ -728,4 +1027,8 @@ export default {
   padding-left: 6px;
   border: none;
 }
+.myimg {
+   filter: brightness(60%);
+}
+
 </style>

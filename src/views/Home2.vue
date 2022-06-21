@@ -58,7 +58,7 @@
 		<!-- <div>
 			<business />
 		</div> -->
-
+            
 
 		<!-- 公司地址 -->
 		<!-- <div>
@@ -68,8 +68,10 @@
 		<!-- 历史沿革 -->
 		<div style="width: 875px;margin: auto;">
 			<history />
-		</div style="width: 875px;margin: auto;">
-
+		</div>
+           <div class="hidden-xs-only">
+				<cloud />
+			</div>
 		<!-- 联系我们 -->
 		<div>
 			<contact />
@@ -86,6 +88,7 @@
 	import foot from "@/components/foot.vue";
 	import carousel from "@/components/home/carousel.vue";
 	import about from "@/components/home/about.vue";
+	import cloud from "@/components/home/cloud.vue";
 	import delegate from "@/components/home/delegate.vue";
 	import news from "@/components/home/news.vue";
 	import mainwork from "@/components/home/mainwork.vue";
@@ -95,6 +98,7 @@
 	import contact from "@/components/home/contact.vue";
 	import 'element-ui/lib/theme-chalk/display.css';
 	import img1 from "@/assets/newbg.png"
+import Cloud from '../components/home/cloud.vue';
 	export default {
 		name: "home",
 		data() {
@@ -176,7 +180,8 @@
 			business,
 			address2,
 			history,
-			contact
+			contact,
+            cloud
 		},
 	};
 </script>

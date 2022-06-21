@@ -18,7 +18,7 @@
 
 <script>
 	// const OSS = require('ali-oss');
-	const key = require("../config/key.js")
+	// const key = require("../config/key.js")
 	var Minio = require('minio')
 	import {
 		v4 as uuidv4
